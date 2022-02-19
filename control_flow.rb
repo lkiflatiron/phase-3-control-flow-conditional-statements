@@ -8,13 +8,13 @@ def hows_the_weather(temperature)
   # your code here
   case 
   when temperature < 40
-    return "It's brisk out there!"
+    "It's brisk out there!"
   when temperature >= 40 && temperature <= 65
-    return "It's a little chilly out there!"
+    "It's a little chilly out there!"
   when temperature > 85
-    return "It's too dang hot out there!" 
+    "It's too dang hot out there!" 
   else
-    return "It's perfect out there!"
+    "It's perfect out there!"
   end
 end
 
@@ -23,23 +23,23 @@ def fizzbuzz(num)
   buzzy = ""
   buzzy += "Fizz" if num % 3 == 0
   buzzy += "Buzz" if num % 5 == 0
-  return buzzy == "" ? num : buzzy
+  buzzy == "" ? num : buzzy
 end
 
 def calculator(operation, num1, num2)
   # your code here
   case operation
   when "+"
-    return num1 + num2
+    num1 + num2
   when "-"
-    return num1 - num2
+    num1 - num2
   when "*"
-    return num1 * num2
+    num1 * num2
   when "/"
-    return num1 / num2
+    num1 / num2
   else
     puts "Invalid operation!"
-    return nil
+    nil
   end
 end
 
